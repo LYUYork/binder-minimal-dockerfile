@@ -8,7 +8,7 @@ RUN set -eux; \
 
 
 # install the notebook package
-RUN which python && which python3
+#RUN which python && which python3
 RUN apt-get install python3 python3-pip -y && pip install --no-cache --upgrade pip && \
     pip install --no-cache notebook jupyterlab
 
